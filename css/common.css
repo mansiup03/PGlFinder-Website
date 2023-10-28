@@ -109,6 +109,7 @@ input[type="radio"] {
     justify-content: center;
 }
 
+
 /* Header */
 .header {
     background-color: white;
@@ -151,10 +152,12 @@ input[type="radio"] {
 .footer {
     background-color: #333333;
     font-size: 13px;
+    
 }
 
 .footer-container {
     padding: 24px;
+    
 }
 
 .footer-cities {

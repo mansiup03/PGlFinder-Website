@@ -75,8 +75,9 @@ $interested_properties = mysqli_fetch_all($result_2, MYSQLI_ASSOC);
                         <div class="phone"><?= $user['phone'] ?></div>
                         <div class="college"><?= $user['college_name'] ?></div>
                     </div>
+
                     <div class="edit">
-                        <div class="edit-profile">Edit Profile</div>
+                        <div class="edit-profile" data-toggle="modal" data-target="#edit-profile-modal">Edit Profile</div>
                     </div>
                 </div>
             </div>
@@ -169,8 +170,67 @@ $interested_properties = mysqli_fetch_all($result_2, MYSQLI_ASSOC);
     }
     ?>
 
+    <div class="modal fade" id="edit-profile-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="edit-heading"> Edit Profile</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form id="edit-profile-form" class="form" role="form" method="post" action="api/edit_profile_submit.php">
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" name="full_name" value="<?= $user['full_name'] ?>" placeholder="Full Name" maxlength="30" required>
+                        </div>
+
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-phone-alt"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" name="phone" value="<?= $user['phone'] ?>" placeholder="Phone Number" maxlength="10" minlength="10" required>
+                        </div>
+
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                            </div>
+                            <input type="email" class="form-control" name="email" value="<?= $user['email'] ?>" readonly placeholder="Email" required> 
+
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-university"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" name="college_name" value="<?= $user['college_name'] ?>" placeholder="College Name" maxlength="150" required>
+                        </div>
+
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-block btn-primary">Save Changes</button>
+            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <?php
     include "includes/footer.php";
+
     ?>
     <script type="text/javascript" src="js/dashboard.js"></script>
 </body>

@@ -27,9 +27,12 @@
                         </div>
                         <input type="password" class="form-control" name="password" placeholder="Password" minlength="6" required>
                     </div>
+                    <a href ="Forget_password.php">
+                     Forgot Password?
+                    </a>
 
                     <div class="form-group">
-                        <button type="submit" class="btn btn-block btn-primary">Login</button>
+                        <button type="submit" style="margin-top: 5%;" class="btn btn-block btn-primary">Login</button>
                     </div>
                 </form>
             </div>
