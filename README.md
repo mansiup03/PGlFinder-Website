@@ -7,7 +7,7 @@
 - Responsive Design: The website is built with a responsive design, ensuring a seamless user experience across various devices and screen sizes.
 - Dynamic User Interaction: Utilizes React for dynamic user interaction, providing a more engaging and interactive browsing experience.
 - Secure Backend: Implements a secure backend using PHP and MySQL to manage user data and safeguard the database, ensuring data privacy and security.
-- 
+
 # Technologies Used
 # Frontend:
 - HTML, CSS, Bootstrap, JavaScript (with React)
