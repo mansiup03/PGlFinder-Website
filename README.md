@@ -1,5 +1,5 @@
 # PG Life Website
-- The PG Life website is a comprehensive platform designed to simplify the process of finding Paying Guest accommodations in urban areas. 
+- The PG Life website is a comprehensive platform designed using HTML, CSS, ReactJs, SQL and PHP. 
 - It offers users an intuitive and user-friendly interface for tracking and searching for the nearest PGs (Paying Guests) in the city, focusing on effective navigation and usability.
 
 # Features
