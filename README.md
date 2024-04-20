@@ -6,6 +6,7 @@
 - Search for Nearest PGs: Easily search for PG accommodations based on the city you are in.
 - Filter by Gender: Filter PG accommodations based on gender preferences, allowing users to find accommodations that match their specific requirements.
 - Filter by Price: Filter PG accommodations based on price range, enabling users to find accommodations that fit their budget.
+- Star rating and reviews : Lets users decide for best accomodation by evaluating the reviews and feedbacks for each PG.
 - Responsive Design: The website is built with a responsive design, ensuring a seamless user experience across various devices and screen sizes.
 - Dynamic User Interaction: Utilizes React for dynamic user interaction, providing a more engaging and interactive browsing experience.
 - Secure Backend: Implements a secure backend using PHP and MySQL to manage user data and safeguard the database, ensuring data privacy and security.
